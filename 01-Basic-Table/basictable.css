@@ -1,0 +1,72 @@
+/* apply all element  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* page style */
+body {
+  font-family: arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #2c3e50;
+}
+/* table */
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  border-color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0, 1);
+}
+th {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+/* hover efect */
+tr:hover {
+  background-color: #f1fafa;
+}
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+/* student information column */
+.title {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+.lunch {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* responsive design */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
