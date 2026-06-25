@@ -15,6 +15,14 @@ h1 {
     margin-bottom: 20px;
     color: #333;
 }
+form{
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
 .form-section {
     border: 1px solid #767676;
