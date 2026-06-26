@@ -1,32 +1,39 @@
 /* base reset */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+*{
+    box-sizing: border-box;
     margin: 0;
-    padding: 30px;
+    padding: 0;
+}
+body {
+    font-family:  Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 /* main form container */
 .form-container {
-    padding: 30px;
-    max-width: 700px; 
-    background-color: white;
-    border-radius: 12px; /*circle corner*/
+    padding: 40px;
+    max-width: 650px; 
+    background-color: #ffffff;
+    border-radius: 12px; 
     width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+
 }
 
 h2 {
-    color: #333;
+    color: #2c3e50;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 
 fieldset {
-    border: 2px solid #4a90e2;
-    padding: 20px;
+    border: 1px solid #e2e8f0;
+    padding: 25px;
     border-radius: 8px;
 }
 
@@ -34,81 +41,104 @@ legend {
     color: #4a90e2;
     font-weight: bold;
     padding: 0 10px;
+    font-size: 16px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
 
 .form-group label {
     font-weight: 600;
-    color: #444;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group select{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    color: #4a5568;
+    margin-bottom: 8px;
     font-size: 14px;
 }
-.gender-group {
-    margin-bottom: 15px;
-}
 
-.radio-option {
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"],
+.form-group input[type="data"],
+.form-group select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.form-group input:focus,
+.form-group select:focus{
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+.form-group input[type="file"]{
+    padding: 8px 0;
+}
+.gender-group{
+    margin-bottom: 20px;
+}
+.radio-option,
+.checkbox-group label{
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-top: 5px;
+    gap: 10px;
+    margin-top: 8px;
+    margin-bottom: 5px;
 }
-
-/* checkbox style */
-.checkbox-group{
-    display: flex;
+.radio-option label,
+.checkbox-group label{
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.radio-option input,
+.checkbox-group input{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+.terms-group{
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
+    gap: 10px;
+    margin-top: 15px;
 }
-input[type="flex"]{
-    padding: 8px;
+.terms-group label{
+    margin-bottom: 0;
+    font-weight: normal;
 }
-.form-group button{
-    margin-top: 10px;
+.btn-container{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
 }
-/* submit button */
-
-.submit-btn {
-    margin-top: 10px;
+.submit-btn, .reset-btn{
+    flex: 1;
     font-size: 15px;
     padding: 12px 20px;
-    background-color: #4a90e2;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    margin-right: 10px;
-    transition: 0.3s;
+    font-weight: 600;
+    transition: background-color 0.3s;
 }
-
-.submit-btn:hover {
+.submit-btn{
+    background-color: #4a90e2;
+    color: white;
+}
+.submit-btn:hover{
     background-color: #357adb;
 }
-/* reset button */
 .reset-btn{
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: 0.3s;
-
+    background-color: #e2e8f0;
+    color: #4a5568;
 }
 .reset-btn:hover{
-    background-color: #b52a37;
+    background-color: #cbd5e1;
 }
